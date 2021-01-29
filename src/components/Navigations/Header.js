@@ -16,16 +16,16 @@ const Header = () => {
               <LinkContainer to="/">
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/">
+              <LinkContainer to="/chat-room">
                 <Nav.Link>Chat Room</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/">
+              <LinkContainer to="/proposition-page">
                 <Nav.Link>Yearly Propositions</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/">
+              <LinkContainer to="/encryption-info">
                 <Nav.Link>Why Encryption?</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/">
+              <LinkContainer to="/about-us">
                 <Nav.Link>About Us</Nav.Link>
               </LinkContainer>
             </Nav>

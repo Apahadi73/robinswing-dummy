@@ -53,6 +53,7 @@ function Homepage() {
       <div className="d-flex justify-content-center">
         <Button variant="primary">Chat with Us</Button>
       </div>
+
       <Row className="my-4">
         {infos.map((info) => {
           return (
@@ -75,10 +76,10 @@ function Homepage() {
           );
         })}
       </Row>
-      <CarouselCard />
       <h3 className="d-flex justify-content-center text-left  pt-3">
-        Stay in Touch
+        OUR VALUES
       </h3>
+      <CarouselCard />
       <h4 className="d-flex justify-content-center text-left ">
         Sign up for our newsletter!
       </h4>

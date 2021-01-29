@@ -48,7 +48,6 @@ const ProductCarousel = () => {
               src={slide.url}
               alt={slide.name}
               style={{
-                borderRadius: "0",
                 display: "block",
                 marginBottom: "4.5rem",
               }}
