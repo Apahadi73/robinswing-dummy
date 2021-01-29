@@ -80,11 +80,11 @@ function Homepage() {
         OUR VALUES
       </h3>
       <CarouselCard />
-      <h4 className="d-flex justify-content-center text-left ">
+      <h4 className="d-flex justify-content-center text-left pt-5">
         Sign up for our newsletter!
       </h4>
       <FormContainer>
-        <InputGroup className="mb-3">
+        <InputGroup className="my-3">
           <FormControl
             placeholder="Email Address"
             aria-label="Email Address"

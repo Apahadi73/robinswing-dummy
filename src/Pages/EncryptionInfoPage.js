@@ -62,7 +62,7 @@ function EncryptionInfoPage() {
       <h3 className="d-flex justify-content-center ">Recommended Services</h3>
 
       <ListGroup variant="flush">
-        <ListGroup.Item style={{ padding: "0" }}>
+        <ListGroup.Item style={{ padding: "0", border: "0" }}>
           <h5>
             <strong>
               <a

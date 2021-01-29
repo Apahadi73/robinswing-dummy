@@ -1,10 +1,11 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 function ChatRoom() {
   return (
-    <div>
+    <Container>
       <h1>ChatRoom</h1>
-    </div>
+    </Container>
   );
 }
 

@@ -7,6 +7,7 @@ import Header from "./components/Navigations/Header";
 import ChatRoom from "./Pages/ChatRoomPage";
 import EncryptionInfoPage from "./Pages/EncryptionInfoPage";
 import AboutUsPage from "./Pages/AboutUsPage";
+import PostDetailPage from "./Pages/PostDetailPage";
 
 export default function App() {
   return (
@@ -17,6 +18,11 @@ export default function App() {
         <Route
           path="/proposition-page"
           component={YearlyPropositionPage}
+          exact
+        />{" "}
+        <Route
+          path="/proposition-page/posts/:id"
+          component={PostDetailPage}
           exact
         />
         <Route path="/chat-room" component={ChatRoom} exact />
