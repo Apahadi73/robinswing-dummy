@@ -19,19 +19,16 @@ function PostDetailPage() {
   console.log(post);
   return (
     <Container>
-      <h3 className="d-flex justify-content-center text-left py-3 ">
-        Yearly Proposition
-      </h3>
       <Row className="py-3">
         <Col sm={12} lg={9} className="my-2 " key={post.id}>
           <Card
             border="light"
             style={{
-              padding: "0.5rem",
+              padding: "1.5rem",
             }}
           >
             <Card.Title>
-              <h4>{post.title}</h4>
+              <h3>{post.title}</h3>
             </Card.Title>
             <Card.Img variant="top" src={post.imageUrl} />
             <Card.Text style={{ color: "grey" }}>{post.date}</Card.Text>
@@ -40,7 +37,7 @@ function PostDetailPage() {
           </Card>
         </Col>
         <Col sm={6} lg={3} key={post.id}>
-          <h3>Recent Posts</h3>
+          <h3 className="mt-3">Recent Posts</h3>
           {filteredPosts.map((post) => {
             return (
               <Row className="m-1 mb-3" key={post.id}>

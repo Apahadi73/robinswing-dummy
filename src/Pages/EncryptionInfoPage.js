@@ -59,7 +59,9 @@ function EncryptionInfoPage() {
         encryption and that it requires greater computation power.{" "}
       </p>
 
-      <h3 className="d-flex justify-content-center ">Recommended Services</h3>
+      <h3 className="d-flex justify-content-center mt-5">
+        Recommended Services
+      </h3>
 
       <ListGroup variant="flush">
         <ListGroup.Item style={{ padding: "0", border: "0" }}>

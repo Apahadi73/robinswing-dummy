@@ -60,7 +60,7 @@ function AboutUsPage() {
         />
       </div>
 
-      <p className="d-flex justify-content-center px-4">
+      <p className="d-flex justify-content-center p-4">
         A nonprofit is as strong as the community that holds it up. Together, we
         can do more than we can do alone. Our goal with Robinswing is to
         catalyze voter turnout to affect real change. There are many ways to
