@@ -3,14 +3,12 @@ import {
   Button,
   Container,
   Image,
-  Jumbotron,
   Row,
   Col,
   InputGroup,
   FormControl,
   Card,
 } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
 import hero from "../images/hero.jpg";
 import touchvpn from "../images/touchvpn.jpg";
 import brave from "../images/brave.png";
@@ -216,7 +214,10 @@ function Homepage() {
         </InputGroup>
       </FormContainer>
       <div className="fab">
-        <img src="https://img.icons8.com/cute-clipart/64/000000/chat.png" />
+        <img
+          src="https://img.icons8.com/cute-clipart/64/000000/chat.png"
+          alt="floating chat icon"
+        />
       </div>
     </Container>
   );
