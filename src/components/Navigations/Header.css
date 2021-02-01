@@ -1,0 +1,17 @@
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-toggler {
+  color: black !important;
+  font-size: 1rem;
+  font-family: "EB Garamond", serif !important;
+}
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap");
+
+.navbar-dark .navbar-brand {
+  font-family: "EB Garamond", serif;
+  color: black !important;
+}
+
+.navbar-dark.navbar-brand:hover {
+  color: lightseagreen !important;
+}

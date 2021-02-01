@@ -2,6 +2,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  background-color: #ffffff !important;
+  position: relative;
+}
+
 main {
   min-height: 90vh;
 }
@@ -12,7 +17,7 @@ h3,
 h4,
 h5 {
   font-size: bold;
-  font-family: "Poppins", sans-serif;
+  font-family: "EB Garamond", serif !important;
 }
 
 h1 {

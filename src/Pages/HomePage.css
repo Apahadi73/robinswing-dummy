@@ -1,0 +1,30 @@
+.hero-image {
+  width: 35rem;
+}
+
+.hero-side {
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-family: "EB Garamond", serif;
+}
+
+.fab {
+  position: fixed;
+
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.sub-heading-grey {
+  color: grey;
+}
+@media only screen and (max-width: 900px) {
+  .hero-side {
+    margin-top: 2rem !important;
+  }
+
+  .hero-side {
+    font-size: 2rem;
+    font-family: "EB Garamond", serif;
+  }
+}
