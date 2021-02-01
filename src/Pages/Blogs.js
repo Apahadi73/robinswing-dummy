@@ -12,26 +12,28 @@ function AllBlogs() {
         {posts.map((post) => {
           return (
             <Col sm={12} md={6} lg={4} xl={4} className="my-2" key={post.id}>
-              <Card
-                border="light"
-                style={{
-                  padding: "0.5rem",
-                }}
-              >
-                <Card.Img variant="top" src={post.imageUrl} />
-                <Card.Text style={{ color: "grey" }}>{post.date}</Card.Text>
-                <Card.Title>
-                  <h5>{post.title}</h5>
-                </Card.Title>
-                <Link
-                  to={`/posts/${post.id}`}
+              <div data-aos="zoom-in-up">
+                <Card
+                  border="light"
                   style={{
-                    width: "25%",
+                    padding: "0.5rem",
                   }}
                 >
-                  Learn More
-                </Link>
-              </Card>
+                  <Card.Img variant="top" src={post.imageUrl} />
+                  <Card.Text style={{ color: "grey" }}>{post.date}</Card.Text>
+                  <Card.Title>
+                    <h5>{post.title}</h5>
+                  </Card.Title>
+                  <Link
+                    to={`/posts/${post.id}`}
+                    style={{
+                      width: "25%",
+                    }}
+                  >
+                    Learn More
+                  </Link>
+                </Card>
+              </div>
             </Col>
           );
         })}

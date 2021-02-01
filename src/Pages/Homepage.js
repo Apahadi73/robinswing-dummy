@@ -22,7 +22,6 @@ import privacy from "../images/privacy.png";
 import teamWork from "../images/team-work.png";
 import teamResilient from "../images/team-resilient.png";
 
-import CarouselCard from "../components/UIElements/CarouselCard";
 import FormContainer from "../components/UIElements/FormContainer";
 import "./HomePage.css";
 
@@ -134,13 +133,13 @@ function Homepage() {
 
       <Row className="py-3">
         <div data-aos="fade-right">
-          <Col sm={12} lg={6} className="my-2 px-1 ">
+          <Col sm={12} lg={6} className="my-3 px-1 ">
             <Image src={security} className="hero-image" />
           </Col>
         </div>
         <Col sm={12} lg={6}>
           <h3 className="hero-side ">Why Encryption?</h3>
-          <p className=" py-2">
+          <p>
             The storing and sharing of sensitive data, whether it’s social
             security numbers or personal financial figures, can be risky
             business. Far too many businesses fall victim to hackers who take
@@ -169,31 +168,33 @@ function Homepage() {
         {recommendedServices.map((service) => {
           return (
             <Col sm={12} md={6} lg={4} xl={4} className="my-2">
-              <Card style={{ border: "none" }}>
-                <Card.Img
-                  variant="top"
-                  src={service.image}
-                  style={{
-                    width: "30%",
-                    margin: "10px auto",
-                  }}
-                />
-                <Card.Body>
-                  <a
-                    style={{ display: "table-cell" }}
-                    href={service.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Card.Title>
-                      <h4>{service.name} </h4>
-                    </Card.Title>
-                  </a>
-                  <Card.Text className="mx-auto">
-                    {service.description}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <div data-aos="zoom-in">
+                <Card style={{ border: "none" }}>
+                  <Card.Img
+                    variant="top"
+                    src={service.image}
+                    style={{
+                      width: "30%",
+                      margin: "10px auto",
+                    }}
+                  />
+                  <Card.Body>
+                    <a
+                      style={{ display: "table-cell" }}
+                      href={service.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Card.Title>
+                        <h4>{service.name} </h4>
+                      </Card.Title>
+                    </a>
+                    <Card.Text className="mx-auto">
+                      {service.description}
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </div>
             </Col>
           );
         })}

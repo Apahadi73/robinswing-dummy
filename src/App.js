@@ -5,8 +5,7 @@ import HomePage from "./Pages/HomePage";
 import Footer from "./components/Navigations/Footer";
 import Header from "./components/Navigations/Header";
 import ChatRoom from "./Pages/ChatRoomPage";
-import EncryptionInfoPage from "./Pages/EncryptionInfoPage";
-import AboutUsPage from "./Pages/AboutUsPage";
+import AboutCompanyPage from "./Pages/AboutCompanyPage";
 import PostDetailPage from "./Pages/PostDetailPage";
 
 export default function App() {
@@ -18,8 +17,7 @@ export default function App() {
         <Route path="/posts" component={AllBlogs} exact />
         <Route path="/posts/:id" component={PostDetailPage} exact />
         <Route path="/chat-room" component={ChatRoom} exact />
-        <Route path="/encryption-info" component={EncryptionInfoPage} exact />
-        <Route path="/about-us" component={AboutUsPage} exact />
+        <Route path="/about-us" component={AboutCompanyPage} exact />
       </main>
       <Footer />
     </Router>

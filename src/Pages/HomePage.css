@@ -22,9 +22,11 @@
   .hero-side {
     margin-top: 2rem !important;
   }
-
+  .hero-image {
+    width: 20rem !important;
+  }
   .hero-side {
-    font-size: 2rem;
+    font-size: 2rem !important;
     font-family: "EB Garamond", serif;
   }
 }

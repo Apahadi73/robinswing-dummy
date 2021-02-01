@@ -36,11 +36,6 @@ const Header = () => {
               <LinkContainer to="/posts">
                 <Nav.Link style={{ color: "black !important" }}>Blogs</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/encryption-info">
-                <Nav.Link style={{ color: "black !important" }}>
-                  Why Encryption?
-                </Nav.Link>
-              </LinkContainer>
               <LinkContainer to="/about-us">
                 <Nav.Link style={{ color: "black !important" }}>
                   About Robinswing
