@@ -1,6 +1,6 @@
 import React from "react";
 import YouTube from "react-youtube";
-import { Card, Col, Container, Button, Row, Image } from "react-bootstrap";
+import { Card, Col, Container, Button, Row } from "react-bootstrap";
 import team from "../images/team.svg";
 import love from "../images/love.svg";
 import target from "../images/target.svg";
