@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Homepage from "./Pages/HomePage";
-import YearlyPropositionPage from "./Pages/YearlyPropositionPage";
+import AllBlogs from "./Pages/Blogs";
+import HomePage from "./Pages/HomePage";
 import Footer from "./components/Navigations/Footer";
 import Header from "./components/Navigations/Header";
 import ChatRoom from "./Pages/ChatRoomPage";
@@ -14,17 +14,9 @@ export default function App() {
     <Router>
       <Header />
       <main className="py-3">
-        <Route path="/" component={Homepage} exact />
-        <Route
-          path="/proposition-page"
-          component={YearlyPropositionPage}
-          exact
-        />{" "}
-        <Route
-          path="/proposition-page/posts/:id"
-          component={PostDetailPage}
-          exact
-        />
+        <Route path="/" component={HomePage} exact />
+        <Route path="/posts" component={AllBlogs} exact />
+        <Route path="/posts/:id" component={PostDetailPage} exact />
         <Route path="/chat-room" component={ChatRoom} exact />
         <Route path="/encryption-info" component={EncryptionInfoPage} exact />
         <Route path="/about-us" component={AboutUsPage} exact />

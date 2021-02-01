@@ -5,7 +5,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 const Header = () => {
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>ROBINSWING</Navbar.Brand>
@@ -19,8 +19,8 @@ const Header = () => {
               <LinkContainer to="/chat-room">
                 <Nav.Link>Chat Room</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/proposition-page">
-                <Nav.Link>Yearly Propositions</Nav.Link>
+              <LinkContainer to="/posts">
+                <Nav.Link>Blogs</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/encryption-info">
                 <Nav.Link>Why Encryption?</Nav.Link>

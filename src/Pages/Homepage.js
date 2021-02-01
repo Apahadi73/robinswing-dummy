@@ -40,7 +40,10 @@ function Homepage() {
   ];
   return (
     <Container>
-      <Jumbotron style={{ padding: "1rem" }}>
+      <Jumbotron
+        className="mt-3"
+        style={{ padding: "1rem", backgroundColor: "#f6f5f5" }}
+      >
         <Image src={holdingHands} fluid />
         <h5 className="d-flex justify-content-center p-2">
           WHERE PRIVACY MEETS DEMOCRACY.
@@ -50,15 +53,17 @@ function Homepage() {
           Americans don't have to worry about their data being stolen.
         </p>
       </Jumbotron>
-      <div className="d-flex justify-content-center">
-        <Button variant="primary">Chat with Us</Button>
+      <div className="d-flex justify-content-center my-3">
+        <Button variant="primary" className="my-3">
+          Chat with Us
+        </Button>
       </div>
 
       <Row className="my-4">
         {infos.map((info) => {
           return (
             <Col sm={12} md={6} lg={4} xl={4} className="my-2">
-              <Card border="light">
+              <Card style={{ border: "none" }}>
                 <Card.Img
                   variant="top"
                   src={info.imageUrl}

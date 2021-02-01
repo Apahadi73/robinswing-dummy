@@ -1,9 +1,18 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
 main {
   min-height: 90vh;
 }
 
-h {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-size: bold;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -35,7 +44,11 @@ h2 {
 .carousel a {
   margin: 0 auto;
 }
-@media (max-width: 900px) {
+
+.carousel-caption {
+  bottom: 5px !important;
+}
+@media (max-width: 600px) {
   .carousel-caption p {
     font-size: 3vw;
   }
@@ -56,9 +69,23 @@ h2 {
   }
 }
 
-.verticalLine-right {
-  border-right: 1px solid grey;
-}
-.verticalLine-left {
-  border-left: 1px solid grey;
+@media (max-width: 800px,min) {
+  .carousel-caption p {
+    font-size: 3vw;
+  }
+
+  .carousel img {
+    height: 15rem;
+    padding: 30px;
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #pitch-video {
+    height: 14rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

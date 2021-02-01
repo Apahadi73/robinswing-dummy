@@ -3,12 +3,10 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import posts from "../dummyData/posts";
 
-function YearlyPropositionPage() {
+function AllBlogs() {
   return (
     <Container>
-      <h3 className="d-flex justify-content-center text-left ">
-        Yearly Proposition
-      </h3>
+      <h3 className="d-flex justify-content-center text-left ">All Posts</h3>
 
       <Row>
         {posts.map((post) => {
@@ -22,11 +20,13 @@ function YearlyPropositionPage() {
               >
                 <Card.Img variant="top" src={post.imageUrl} />
                 <Card.Text style={{ color: "grey" }}>{post.date}</Card.Text>
-                <Card.Title>{post.title}</Card.Title>
+                <Card.Title>
+                  <h5>{post.title}</h5>
+                </Card.Title>
                 <Link
-                  to={`/proposition-page/posts/${post.id}`}
+                  to={`/posts/${post.id}`}
                   style={{
-                    width: "50%",
+                    width: "25%",
                   }}
                 >
                   Learn More
@@ -40,4 +40,4 @@ function YearlyPropositionPage() {
   );
 }
 
-export default YearlyPropositionPage;
+export default AllBlogs;

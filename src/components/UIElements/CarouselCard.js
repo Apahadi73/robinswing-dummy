@@ -52,7 +52,13 @@ const ProductCarousel = () => {
                 marginBottom: "4.5rem",
               }}
             />
-            <Carousel.Caption>
+            <Carousel.Caption
+              style={{
+                paddingTop: "0",
+                paddingBottom: "1rem",
+                justifyContent: "start",
+              }}
+            >
               <p style={{ color: "black" }}>{slide.description}</p>
             </Carousel.Caption>
           </Carousel.Item>

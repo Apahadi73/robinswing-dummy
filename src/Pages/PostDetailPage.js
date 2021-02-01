@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Container, Card, Row, Col } from "react-bootstrap";
+import { Container, Card, Row, Col, Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 import { useParams, Link } from "react-router-dom";
 import posts from "../dummyData/posts";
 
@@ -19,6 +20,11 @@ function PostDetailPage() {
   console.log(post);
   return (
     <Container>
+      <LinkContainer to="/posts">
+        <Link>
+          <i className="fas fa-caret-left mx-2"></i>See all Posts
+        </Link>
+      </LinkContainer>
       <Row className="py-3">
         <Col sm={12} lg={9} className="my-2 " key={post.id}>
           <Card
@@ -49,7 +55,9 @@ function PostDetailPage() {
                 >
                   <Card.Img variant="top" src={post.imageUrl} />
                   <Card.Text style={{ color: "grey" }}>{post.date}</Card.Text>
-                  <Card.Title>{post.title}</Card.Title>
+                  <Card.Title>
+                    <h5>{post.title}</h5>
+                  </Card.Title>
                   <Link
                     onClick={() => {
                       id = post.id;

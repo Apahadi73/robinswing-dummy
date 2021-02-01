@@ -82,6 +82,15 @@ function EncryptionInfoPage() {
             track you. Load the pages you go to 44% faster. Stop tracking by
             thousands of third-party sites.
           </p>
+          <a
+            style={{ display: "table-cell" }}
+            href="https://chrome.google.com/webstore/detail/disconnect/jeoacafpbcihiomhlakheieifhpjdfeo/related?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Install Disconnect
+          </a>
+          <p></p>
         </ListGroup.Item>
         <ListGroup.Item style={{ padding: "0", border: "0" }}>
           <h5>
@@ -101,6 +110,15 @@ function EncryptionInfoPage() {
             hotspots? Want to be protected from surveillance? Get the best free
             VPN for chrome today!
           </p>
+          <a
+            style={{ display: "table-cell" }}
+            href="https://chrome.google.com/webstore/detail/touch-vpn-secure-and-unli/bihmplhobchoageeokmgbdihknkjbknd?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Install Touch VPN
+          </a>
+          <p></p>
         </ListGroup.Item>
       </ListGroup>
     </Container>
