@@ -17,7 +17,6 @@ function PostDetailPage() {
     setPost(fetchedPost);
   }, [id]);
 
-  console.log(post);
   return (
     <Container>
       <LinkContainer to="/posts">

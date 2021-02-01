@@ -6,14 +6,14 @@ import Header from "./components/Navigations/Header";
 import ChatRoom from "./Pages/ChatRoomPage";
 import AboutCompanyPage from "./Pages/AboutCompanyPage";
 import PostDetailPage from "./Pages/PostDetailPage";
-import Homepage from "./Pages/HomePage";
+import HomePage from "./Pages/HomePage";
 
 export default function App() {
   return (
     <Router>
       <Header />
       <main className="py-3">
-        <Route path="/" component={Homepage} exact />
+        <Route path="/" component={HomePage} exact />
         <Route path="/posts" component={AllBlogs} exact />
         <Route path="/posts/:id" component={PostDetailPage} exact />
         <Route path="/chat-room" component={ChatRoom} exact />

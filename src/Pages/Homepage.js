@@ -23,7 +23,7 @@ import teamResilient from "../images/team-resilient.png";
 import FormContainer from "../components/UIElements/FormContainer";
 import "./HomePage.css";
 
-function Homepage() {
+function HomePage() {
   const companyValues = [
     {
       url: privacy,
@@ -230,4 +230,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default HomePage;
