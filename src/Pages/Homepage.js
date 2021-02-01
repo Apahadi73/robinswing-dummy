@@ -107,7 +107,7 @@ function Homepage() {
       <Row>
         {companyValues.map((value) => {
           return (
-            <Col sm={12} md={6} lg={4} xl={4} className="my-2">
+            <Col sm={12} md={6} lg={4} xl={4} className="my-2" key={value.url}>
               <div data-aos="fade-up">
                 <Card style={{ border: "none" }}>
                   <Card.Img
@@ -165,7 +165,14 @@ function Homepage() {
       <Row>
         {recommendedServices.map((service) => {
           return (
-            <Col sm={12} md={6} lg={4} xl={4} className="my-2">
+            <Col
+              sm={12}
+              md={6}
+              lg={4}
+              xl={4}
+              className="my-2"
+              key={service.url}
+            >
               <div data-aos="zoom-in">
                 <Card style={{ border: "none" }}>
                   <Card.Img
