@@ -28,11 +28,6 @@ const Header = () => {
               <LinkContainer to="/">
                 <Nav.Link style={{ color: "black !important" }}>Home</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/chat-room">
-                <Nav.Link style={{ color: "black !important" }}>
-                  Chat Room
-                </Nav.Link>
-              </LinkContainer>
               <LinkContainer to="/posts">
                 <Nav.Link style={{ color: "black !important" }}>Blogs</Nav.Link>
               </LinkContainer>
