@@ -86,7 +86,10 @@ function HomePage() {
     <Container className="parent">
       <Row className="py-3">
         <Col sm={12} lg={6}>
-          <h3 className="hero-side ">WHERE PRIVACY MEETS DEMOCRACY.</h3>
+          <h3 className="hero-side ">
+            WHERE <span className="text-main-highlight">PRIVACY</span> MEETS{" "}
+            <span className="text-main-highlight">DEMOCRACY</span>.
+          </h3>
           <Button>Install Robinswing</Button>
           <p className="sub-heading-grey py-2">
             An anonymized application software where students, voters, and
@@ -100,9 +103,9 @@ function HomePage() {
         </Col>
       </Row>
 
-      <h3 className="d-flex justify-content-center text-left  pt-3">
+      <h2 className="d-flex justify-content-center text-left  pt-3">
         OUR VALUES
-      </h3>
+      </h2>
 
       <Row>
         {companyValues.map((value) => {

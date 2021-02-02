@@ -18,6 +18,12 @@
 .sub-heading-grey {
   color: grey;
 }
+
+.text-main-highlight {
+  color: #5863f3 !important;
+  font-size: 3rem;
+  font-family: "EB Garamond", serif;
+}
 @media only screen and (max-width: 900px) {
   .hero-side {
     margin-top: 2rem !important;
